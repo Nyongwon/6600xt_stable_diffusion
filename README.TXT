@@ -12,13 +12,13 @@ python 3.9：https://www.python.org/ftp/python/3.9.7/python-3.9.7-amd64.exe
 git：https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.1/Git-2.42.0-64-bit.exe
 notepad++：https://sourl.cn/DwKKM5
 二.步骤
-1.安装python3.9，注意安装左下角界面勾选”add python3.9 to path“
+1.安装python3.9，注意安装左下角界面勾选”add python3.9 to path
 2.安装git，一直点击NEXT，直到”choosing the default editor used by git“界面，选择nottpad++，之后一直点击NEXT直到安装完成；如果选择notepad++后无法点击NEXT，尝试重新安装git，或者notepad++需要添加进path。
 添加path方法：windows界面搜索‘查看高级系统设置’，在高级界面点击右下角环境变量，选中系统变量下的path点击编辑
 ，点击右侧浏览选中notepad++安装路径。如果此处存在问题，请搜索自行解决。
 3.下载stable diffusion；运行cmd，输入‘python’并回车，查看是否存在python3.9版本，如果提示没有找到，请查找添加路径方法，方法同2。
 3.1更新pip，在cmd输入‘pip install --upgrade pip’，提示成功更新即可，如果失败，请更换pip下载源
-（pip下载源更新方法：cmd界面输入‘pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple_’  -------此处为清华pip源，如果无法更新，请自行搜索）
+（pip下载源更新方法：cmd界面输入‘pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple’ -------此处为清华pip源，如果无法更新，请自行搜索）
 3.2在C区外创建文件夹，用于保存Stable difussion（SD）文件，创建后在该文件夹目录上方导航栏全选并输入cmd，或使用cd命令cd 到该文件夹。
 3.3输入命令：
   git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml && cd stable-diffusion-webui-directml && git submodule init && git submodule update ---------回车后等待下载完成。
