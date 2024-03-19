@@ -18,9 +18,10 @@ notepad++：https://sourl.cn/DwKKM5
 ，点击右侧浏览选中notepad++安装路径。如果此处存在问题，请搜索自行解决。
 3.下载stable diffusion；运行cmd，输入‘python’并回车，查看是否存在python3.9版本，如果提示没有找到，请查找添加路径方法，方法同2。
 3.1更新pip，在cmd输入‘pip install --upgrade pip’，提示成功更新即可，如果失败，请更换pip下载源
-（pip下载源更新方法：cmd界面输入‘pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple_’此处为清华pip源，如果无法更新，请自行搜索）
+（pip下载源更新方法：cmd界面输入‘pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple_’  -------此处为清华pip源，如果无法更新，请自行搜索）
 3.2在C区外创建文件夹，用于保存Stable difussion（SD）文件，创建后在该文件夹目录上方导航栏全选并输入cmd，或使用cd命令cd 到该文件夹。
-3.3输入命令：git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml && cd stable-diffusion-webui-directml && git submodule init && git submodule update 回车后等待下载完成。
+3.3输入命令：
+  git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml && cd stable-diffusion-webui-directml && git submodule init && git submodule update ---------回车后等待下载完成。
 4.配置webuyi user.bat，右键以notepad++打开，在‘set COMMANDLINE_ARGS=’右侧输入‘--medvram --backend directml --no-half --no-half-vae --precision full --opt-sub-quad-attention --opt-split-attention-v1 --disable-nan-check --no-gradio-queue --sub-quad-q-chunk-size 256 --sub-quad-kv-chunk-size 256 --sub-quad-chunk-threshold 70 --theme dark --autolaunch_’，保存后运行webuyi user.bat。
 4.1首次启动webui user.bat的错误修复（你需要有看懂部分英文的能力，否则无法知道错误信息是什么）：
 A.#pip更新
